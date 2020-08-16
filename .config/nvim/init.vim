@@ -22,6 +22,10 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'tpope/vim-surround'
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'mattn/emmet-vim'
+Plug 'dense-analysis/ale'
+Plug 'airblade/vim-gitgutter'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -39,7 +43,6 @@ set background=dark
 set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=4
-"" set expandtab
 set smartindent
 set nu rnu
 set nowrap
@@ -62,3 +65,6 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") && v:this_session == ""
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") && isdirectory(argv()[0]) | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
 
+" SOURCES
+
+source $HOME/.config/nvim/plug-config/coc.vim

@@ -45,8 +45,6 @@ alias magento="php -d memory_limit=4096M bin/magento"
 alias sync="bin/sync.sh"
 alias vi="nvim"
 alias vim="nvim"
-alias mampSQL="/Library/Application Support/appsolute/MAMP PRO/db/mysql157"
-alias mamphp73="/Applications/MAMP/bin/php/php7.3.9/bin/php"
 
 # STARTUP APPS
 

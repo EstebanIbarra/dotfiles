@@ -26,6 +26,7 @@ Plug 'mattn/emmet-vim'
 Plug 'dense-analysis/ale'
 Plug 'airblade/vim-gitgutter'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'tonsky/FiraCode'
 
 call plug#end()
 

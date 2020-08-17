@@ -85,11 +85,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -99,12 +99,28 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# ALIASES
 alias vi="nvim"
 alias vim="nvim"
+alias composer="php /usr/local/bin/composer.phar"
+alias magento="php -d memory_limit=4096M bin/magento"
 archey
 prompt_context(){}
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# PATH VARIABLE
+
+# Python 3.8
+PATH="/Library/Frameworks/Python.framework/Versions/3.8/bin:${PATH}"
+export PATH
+# Php 7.3
+PATH="/usr/local/php5/bin:${PATH}"
+export PATH
+# Maven 3.6.3
+export M2_HOME="/Applications/apache-maven-3.6.3"
+export PATH=$PATH:$M2_HOME/bin
+# JAVA_HOME
+export JAVA_HOME=$(/usr/libexec/java_home)
+# MySql => MAMP
+export PATH=$PATH:/Applications/MAMP/Library/bin

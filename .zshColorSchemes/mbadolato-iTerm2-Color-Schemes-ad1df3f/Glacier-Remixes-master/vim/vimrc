@@ -1,0 +1,9 @@
+" add to your .vimrc
+
+set number
+syntax enable
+
+colorscheme glacier
+
+set guifont=Cousine:h12
+set lines=65 columns=100

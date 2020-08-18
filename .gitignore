@@ -52,3 +52,5 @@ CmapToolsLogs
 .oh-my-zsh
 .zsh_history
 .zcompdump-eir-pro-5.3
+.iterm2
+.iterm2_shell_integration.zsh

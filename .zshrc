@@ -104,10 +104,6 @@ alias vi="nvim"
 alias vim="nvim"
 alias composer="php /usr/local/bin/composer.phar"
 alias magento="php -d memory_limit=4096M bin/magento"
-archey
-prompt_context(){}
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # PATH VARIABLE
 
@@ -124,3 +120,10 @@ export PATH=$PATH:$M2_HOME/bin
 export JAVA_HOME=$(/usr/libexec/java_home)
 # MySql => MAMP
 export PATH=$PATH:/Applications/MAMP/Library/bin
+
+# STARTUP PROGRAMS
+
+archey
+prompt_context(){}
+tmux
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

@@ -14,7 +14,6 @@
 
 call plug#begin('~/.config/nvim/plugged/')
 
-Plug 'ronny/birds-of-paradise.vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
@@ -33,7 +32,6 @@ call plug#end()
 " BASIC CONFIGS
 
 syntax on
-colorscheme birds-of-paradise
 let g:lightline = {
 	\ 'colorscheme': 'wombat',
 	\ }

@@ -73,8 +73,10 @@ plugins=(
 	docker
 	zsh-syntax-highlighting
 	zsh-autosuggestions
+	tmux
 )
 
+ZSH_TMUX_AUTOSTART="true"
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -125,5 +127,4 @@ export PATH=$PATH:/Applications/MAMP/Library/bin
 
 archey
 prompt_context(){}
-tmux
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

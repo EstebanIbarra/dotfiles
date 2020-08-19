@@ -93,6 +93,34 @@ else
   export EDITOR='nvim'
 fi
 
+# FUNCTIONS
+
+# Extract files
+ex ()
+{
+	if [ -f $1 ] ; then
+		case $1 in
+			*.tar.bz2)    tar xjf $1    ;;
+			*.tar.gz)     tar xzf $1    ;;
+			*.bz2)        bunzip2 $1    ;;
+			*.rar)        unrar x $1    ;;
+			*.gz)         gunzip $1     ;;
+			*.tar)        tar xf $1     ;;
+			*.tbz2)       tar xjf $1    ;;
+			*.tgz)        tar xzf $1    ;;
+			*.zip)        unzip $1      ;;
+			*.Z)          uncompress $1 ;;
+			*.7z)         7z x $1       ;;
+			*.deb)        ar x $1       ;;
+			*.tar.xz)     tar xf $1     ;;
+			*.tar.zst)    unzstd $1     ;;
+			*)            echo "'$1' cannot be extracted via ex()"  ;;
+		esac
+	else
+		echo "'$1' is not a valid file"
+	fi
+}
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -102,10 +130,55 @@ fi
 # For a full list of active aliases, run `alias`.
 #
 # ALIASES
+
+# Homebrew update
+alias brew2u='brew update && brew upgrade'
+
+# Text editor
 alias vi="nvim"
 alias vim="nvim"
+
+# Development tools
 alias composer="php /usr/local/bin/composer.phar"
 alias magento="php -d memory_limit=4096M bin/magento"
+
+# Navigation
+alias ..='cd ..'
+alias ...='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
+
+# Git commands
+alias gitinit='git fetch origin master && git pull origin master'
+alias gitstat='git status'
+alias gitadd='git add -u'
+alias gitaddall='git add .'
+alias gitcommit='git commit -m'
+alias gitfetch='git fetch origin'
+alias gitpull='git pull origin'
+alias gitpush='git push origin'
+
+# Lists ls ==> exa
+alias ls='exa -la --color=always --group-directories-first'
+alias la='exa -a --color=always --group-directories-first'
+alias ll='exa -l --color=always --group-directories-first'
+alias lt='exa -aT --color=always --group-directories-first'
+alias l.='exa -a | egrep "^\."'
+
+# Colorize grep output
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# Security flags
+alias cp='cp -i'        # Confirms before overwriting something
+alias df='df -h'        # Human-readable sizes
+alias free='free -m'    # Shows sizes in MB
+
+# Shutdown && Reboot
+alias Sshutdown='sudo shutdown now'
+alias Sreboot='sudo reboot'
 
 # PATH VARIABLE
 

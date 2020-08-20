@@ -143,6 +143,7 @@ alias composer="php /usr/local/bin/composer.phar"
 alias magento="php -d memory_limit=4096M bin/magento"
 
 # Navigation
+alias ~='cd'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias .3='cd ../../..'
@@ -180,6 +181,8 @@ alias free='free -m'    # Shows sizes in MB
 alias Sshutdown='sudo shutdown now'
 alias Sreboot='sudo reboot'
 
+# Rome
+alias rome='${HOME}/rome/rome'
 # PATH VARIABLE
 
 # Python 3.8

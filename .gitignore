@@ -54,3 +54,5 @@ CmapToolsLogs
 .zcompdump-eir-pro-5.3
 .iterm2
 .iterm2_shell_integration.zsh
+.yarnrc
+yarn.lock

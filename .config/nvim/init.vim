@@ -14,18 +14,18 @@
 
 call plug#begin('~/.config/nvim/plugged/')
 
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
-Plug 'itchyny/lightline.vim'
-Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-Plug 'tpope/vim-surround'
-Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'mattn/emmet-vim'
-Plug 'dense-analysis/ale'
-Plug 'airblade/vim-gitgutter'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'tonsky/FiraCode'
+	Plug 'junegunn/fzf'
+	Plug 'junegunn/fzf.vim'
+	Plug 'itchyny/lightline.vim'
+	Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+	Plug 'tpope/vim-surround'
+	Plug 'preservim/nerdtree'
+	Plug 'Xuyuanp/nerdtree-git-plugin'
+	Plug 'mattn/emmet-vim'
+	Plug 'dense-analysis/ale'
+	Plug 'airblade/vim-gitgutter'
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+	Plug 'tonsky/FiraCode'
 
 call plug#end()
 
@@ -38,6 +38,7 @@ let g:lightline = {
 let NERDTreeShowHidden=1
 
 set noshowmode
+set list lcs=tab:\|\ 
 set background=dark
 set noerrorbells
 set tabstop=4 softtabstop=4

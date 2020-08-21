@@ -1,4 +1,4 @@
-" CONFIG FILE FOR EIR'S NEOVIM
+"				===>    CONFIG FILE FOR EIR'S NEOVIM    <===
 " 
 " 
 "
@@ -10,7 +10,7 @@
 " Created: 15/Aug/2020 by Esteban Ibarra
 " Modified: 15/Aug/2020 by Esteban Ibarra
 
-" PLUGINS
+"		===    PLUGINS    ===
 
 call plug#begin('~/.config/nvim/plugged/')
 
@@ -29,17 +29,14 @@ call plug#begin('~/.config/nvim/plugged/')
 
 call plug#end()
 
-" BASIC CONFIGS
+"		===    CONFIG    ===
+
+" ==> Basic Config
 
 syntax on
-let g:lightline = {
-	\ 'colorscheme': 'wombat',
-	\ }
-let NERDTreeShowHidden=1
 
 set noshowmode
 set list lcs=tab:\|\ 
-set background=dark
 set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=4
@@ -54,7 +51,19 @@ set undofile
 set incsearch
 set clipboard=unnamed
 set colorcolumn=80
+
+" ==> Colors
+
+set background=dark
 highlight ColorColumn ctermbg=0 guibg=lightgrey
+let g:lightline = {
+	\ 'colorscheme': 'wombat',
+	\ }
+
+" ==> NERDTree
+
+let NERDTreeShowHidden=1
+let NERDTreeMapOpenInTab='<ENTER>'
 
 " STARTUP COMMANDS
 
@@ -65,6 +74,7 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") && v:this_session == "" | NERDTree | endif
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") && isdirectory(argv()[0]) | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+autocmd BufWinEnter * NERDTreeMirror
 
 " SOURCES
 

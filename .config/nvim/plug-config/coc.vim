@@ -151,3 +151,31 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>)
+
+" ===    COC SETTINGS    ===
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+let g:coc_global_extensions = [
+	\ 'coc-snippets',
+	\ 'coc-pairs',
+	\ 'coc-prettier',
+	\ 'coc-tsserver',
+	\ 'coc-html',
+	\ 'coc-css',
+	\ 'coc-angular',
+	\ 'coc-json',
+	\ 'coc-vimtex',
+	\ 'coc-emmet',
+	\ 'coc-fzf-preview',
+	\ 'coc-git',
+	\ 'coc-graphql',
+	\ 'coc-highlight',
+	\ 'coc-jedi',
+	\ 'coc-phpactor',
+	\ 'coc-phpls',
+	\ 'coc-python',
+	\ 'coc-sh',
+	\ 'coc-stylelintplus',
+	\ 'coc-sql',
+	\ 'coc-vetur',
+	\ 'coc-xml'
+	\ ]

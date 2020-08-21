@@ -52,6 +52,7 @@ set nobackup
 set undodir=~/.nvim/undodir
 set undofile
 set incsearch
+set clipboard=unnamed
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 

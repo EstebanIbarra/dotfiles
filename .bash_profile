@@ -1,14 +1,14 @@
-# EIR's bash_profile
+#				===>    CONFIG FILE FOR EIR'S BASH    <===
+#  _______ _____ ______  
+# (_______|_____|_____ \ 
+#  _____     _   _____) )
+# |  ___)   | | (_____ ( 
+# | |_____ _| |_      | |
+# |_______|_____)     |_|
 #
-#
-#
-#
-#
-#
-#
-#
-# Created by EIR
-# Modified: 16/Aug/2020
+# Created by Esteban Ibarra
+# Modified: 21/Aug/2020 by Esteban Ibarra
+
 
 source ~/.profile
 

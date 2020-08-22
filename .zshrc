@@ -1,3 +1,15 @@
+#				===>    CONFIG FILE FOR EIR'S ZSH    <===
+#  _______ _____ ______  
+# (_______|_____|_____ \ 
+#  _____     _   _____) )
+# |  ___)   | | (_____ ( 
+# | |_____ _| |_      | |
+# |_______|_____)     |_|
+#
+# Created: 15/Aug/2020 by Esteban Ibarra
+# Modified: 21/Aug/2020 by Esteban Ibarra
+
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -77,6 +89,7 @@ plugins=(
 )
 
 ZSH_TMUX_AUTOSTART="true"
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -86,6 +99,13 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
+# COLORSCHEMES
+
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell"
+[ -n "$PS1" ] && \
+	[ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+		eval "$("$BASE16_SHELL/profile_helper.sh")"
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'

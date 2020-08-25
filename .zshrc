@@ -7,7 +7,7 @@
 # |_______|_____)     |_|
 #
 # Created: 15/Aug/2020 by Esteban Ibarra
-# Modified: 22/Aug/2020 by Esteban Ibarra
+# Modified: 24/Aug/2020 by Esteban Ibarra
 
 
 # If you come from bash you might have to change your $PATH.
@@ -155,7 +155,8 @@ ex ()
 alias brew2u='brew update && brew upgrade'
 
 # Text editor
-alias vi="nvim"
+alias v="nvim"
+alias vi="vim"
 alias vim="nvim"
 
 # Development tools

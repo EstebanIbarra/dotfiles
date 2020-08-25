@@ -60,3 +60,4 @@ yarn.lock
 .pylint.d/RenFiles1.stats
 .wget-hsts
 tmux-client-48306.log
+.phpstorm

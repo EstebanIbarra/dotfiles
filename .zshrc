@@ -7,7 +7,7 @@
 # |_______|_____)     |_|
 #
 # Created: 15/Aug/2020 by Esteban Ibarra
-# Modified: 24/Aug/2020 by Esteban Ibarra
+# Modified: 25/Aug/2020 by Esteban Ibarra
 
 
 # If you come from bash you might have to change your $PATH.
@@ -202,6 +202,11 @@ alias free='free -m'    # Shows sizes in MB
 alias Sshutdown='sudo shutdown now'
 alias Sreboot='sudo reboot'
 
+# Dead End game
+alias dunnet='emacs -batch -l dunnet'
+
+# Homebrew Python 3
+alias python3='/usr/local/bin/python3'
 # PATH VARIABLE
 
 # Python 3.8

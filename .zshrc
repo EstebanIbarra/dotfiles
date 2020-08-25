@@ -7,14 +7,14 @@
 # |_______|_____)     |_|
 #
 # Created: 15/Aug/2020 by Esteban Ibarra
-# Modified: 21/Aug/2020 by Esteban Ibarra
+# Modified: 22/Aug/2020 by Esteban Ibarra
 
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/EIR/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -201,8 +201,6 @@ alias free='free -m'    # Shows sizes in MB
 alias Sshutdown='sudo shutdown now'
 alias Sreboot='sudo reboot'
 
-# Rome
-alias rome='${HOME}/rome/rome'
 # PATH VARIABLE
 
 # Python 3.8
@@ -212,10 +210,10 @@ export PATH
 PATH="/usr/local/php5/bin:${PATH}"
 export PATH
 # Maven 3.6.3
-export M2_HOME="/Applications/apache-maven-3.6.3"
-export PATH=$PATH:$M2_HOME/bin
+# export M2_HOME="/Applications/apache-maven-3.6.3"
+# export PATH=$PATH:$M2_HOME/bin
 # JAVA_HOME
-export JAVA_HOME=$(/usr/libexec/java_home)
+# export JAVA_HOME=$(/usr/libexec/java_home)
 # MySql => MAMP
 export PATH=$PATH:/Applications/MAMP/Library/bin
 

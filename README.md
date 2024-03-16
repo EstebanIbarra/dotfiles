@@ -4,9 +4,12 @@ This is a personal repo containing my dotfiles, feel free to use it if you want 
 
 ## Requirements
 
-- zsh
-- oh-my-zsh
-- GNU stow
+- [ZSH](https://www.zsh.org)
+- [Oh-my-zsh](https://ohmyz.sh)
+- [GNU stow](https://www.gnu.org/software/stow)
+- [Exa](https://the.exa.website)
+- [Neovim](https://neovim.io)
+- [Neofetch](https://github.com/dylanaraps/neofetch)
 
 ## Instructions
 

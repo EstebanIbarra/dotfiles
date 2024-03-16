@@ -1,3 +1,6 @@
 [submodule ".config/nvim"]
 	path = .config/nvim
 	url = git@github.com:EstebanIbarra/config.nvim.git
+[submodule ".config/alacritty"]
+	path = .config/alacritty
+	url = git@github.com:EstebanIbarra/alacritty-config.git

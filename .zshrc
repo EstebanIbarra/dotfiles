@@ -90,13 +90,9 @@ source $ZSH/oh-my-zsh.sh
 # Please use the file .config/shell/.userconfig to set user configurations
 # such as environment variables and paths.
 
-if [ -f ~/.config/shell/.userconfig ]; then
-  source ~/.config/shell/.userconfig
-fi
+source ~/.config/shell/.userconfig
 
 # ============================== PERSONAL ALIASES ==============================
 # Please use the file .aliases to set your personal aliases.
 
-if [ -f ~/.config/shell/.aliases ]; then
-  source ~/.config/shell/.aliases
-fi
+source ~/.config/shell/.aliases

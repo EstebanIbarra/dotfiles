@@ -1,6 +1,4 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
+# ============================== OH MY ZSH CONFIG ==============================
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -25,7 +23,7 @@ ZSH_THEME="agnoster"
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
-zstyle ':omz:update' mode auto      # update automatically without asking
+zstyle ':omz:update' mode auto        # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
@@ -88,35 +86,17 @@ plugins=(
 export ZSH_TMUX_AUTOSTART=true
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
+# ========================== SHELL USER CONFIGURATION ==========================
+# Please use the file .config/shell/.userconfig to set user configurations
+# such as environment variables and paths.
 
-# export MANPATH="/usr/local/man:$MANPATH"
+if [ -f ~/.config/shell/.userconfig ]; then
+  source ~/.config/shell/.userconfig
+fi
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+# ============================== PERSONAL ALIASES ==============================
+# Please use the file .aliases to set your personal aliases.
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias v="nvim"
-alias vi="nvim"
-alias vim="nvim"
-
-alias ~="cd"
-alias ..="cd .."
-alias ...="cd ../.."
+if [ -f ~/.config/shell/.aliases ]; then
+  source ~/.config/shell/.aliases
+fi

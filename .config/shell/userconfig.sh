@@ -16,3 +16,7 @@
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+
+if [ -f ~/.config/shell/.env ]; then
+  source ~/.config/shell/.env
+fi

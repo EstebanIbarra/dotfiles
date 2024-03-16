@@ -87,12 +87,12 @@ export ZSH_TMUX_AUTOSTART=true
 source $ZSH/oh-my-zsh.sh
 
 # ========================== SHELL USER CONFIGURATION ==========================
-# Please use the file .config/shell/.userconfig to set user configurations
+# Please use the file .config/shell/userconfig.sh to set user configurations
 # such as environment variables and paths.
 
-source ~/.config/shell/.userconfig
+source ~/.config/shell/userconfig.sh
 
 # ============================== PERSONAL ALIASES ==============================
-# Please use the file .aliases to set your personal aliases.
+# Please use the file .config/shell/aliases.sh to set your personal aliases.
 
-source ~/.config/shell/.aliases
+source ~/.config/shell/aliases.sh

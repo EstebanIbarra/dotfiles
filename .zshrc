@@ -1,4 +1,4 @@
-# ============================== OH MY ZSH CONFIG ==============================
+# ============================== OH MY ZSH CONFIG =============================
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -86,13 +86,19 @@ plugins=(
 export ZSH_TMUX_AUTOSTART=true
 source $ZSH/oh-my-zsh.sh
 
-# ========================== SHELL USER CONFIGURATION ==========================
+# ========================== SHELL USER CONFIGURATION =========================
 # Please use the file .config/shell/userconfig.sh to set user configurations
 # such as environment variables and paths.
 
 source ~/.config/shell/userconfig.sh
 
-# ============================== PERSONAL ALIASES ==============================
+# ============================== PERSONAL ALIASES =============================
 # Please use the file .config/shell/aliases.sh to set your personal aliases.
 
 source ~/.config/shell/aliases.sh
+
+# ============================== STARTUP SEQUENCE =============================
+# Please use the file .config/shell/startup.sh to set your startup sequence.
+
+source ~/.config/shell/startup.sh
+

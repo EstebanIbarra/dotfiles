@@ -40,3 +40,6 @@ alias free='free -m'  # Shows sizes in MB
 # Shutdown and Reboot
 alias shutdown='sudo shutdown now'
 alias reboot='sudo reboot'
+
+# Executables
+alias python='python3'

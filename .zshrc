@@ -92,6 +92,11 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.config/shell/userconfig.sh
 
+# ================================= FUNCTIONS =================================
+# Please use the file .config/shell/funcs.sh to set your personal functions.
+
+source ~/.config/shell/funcs.sh
+
 # ============================== PERSONAL ALIASES =============================
 # Please use the file .config/shell/aliases.sh to set your personal aliases.
 

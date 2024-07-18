@@ -10,6 +10,8 @@ This is a personal repo containing my dotfiles, feel free to use it if you want 
 - [Exa](https://the.exa.website)
 - [Neovim](https://neovim.io)
 - [Neofetch](https://github.com/dylanaraps/neofetch)
+- [Fortune](https://www.ibiblio.org/pub/linux/games/amusements/fortune/!INDEX.html)
+- [Cowsay](https://github.com/tnalpgge/rank-amateur-cowsay)
 
 ## Instructions
 

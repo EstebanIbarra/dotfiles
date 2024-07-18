@@ -71,12 +71,17 @@ zstyle ':omz:update' mode auto        # update automatically without asking
 plugins=(
   brew
   colored-man-pages
+  chucknorris
   docker
   docker-compose
   dotenv
   extract
   fast-syntax-highlighting
   git
+  man
+  rust
+  systemadmin
+  themes
   tmux
   vagrant
   vi-mode

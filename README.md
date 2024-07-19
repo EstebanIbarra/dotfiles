@@ -7,7 +7,7 @@ This is a personal repo containing my dotfiles, feel free to use it if you want 
 - [ZSH](https://www.zsh.org)
 - [Oh-my-zsh](https://ohmyz.sh)
 - [GNU stow](https://www.gnu.org/software/stow)
-- [Exa](https://the.exa.website)
+- [Eza](https://github.com/eza-community/eza)
 - [Neovim](https://neovim.io)
 - [Neofetch](https://github.com/dylanaraps/neofetch)
 - [Fortune](https://www.ibiblio.org/pub/linux/games/amusements/fortune/!INDEX.html)

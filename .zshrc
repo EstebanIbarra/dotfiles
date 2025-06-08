@@ -120,4 +120,3 @@ source ~/.config/shell/aliases.sh
 # Please use the file .config/shell/startup.sh to set your startup sequence.
 
 source ~/.config/shell/startup.sh
-

@@ -22,6 +22,11 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+# Docker Completions
+fpath=(/Users/esteban/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+
 # Source .env file
 if [ -f ~/.config/shell/.env ]; then
   source ~/.config/shell/.env
